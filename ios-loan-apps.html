@@ -53,56 +53,6 @@
   gtag('config', 'G-CNPTM32KNH');
 </script>
 
-<!-- <script type="application/javascript">
-  function getIP(json) {
-    document.write("My public IP address is: ", json.ip);
-  }
-</script> -->
-
-
-<script type="text/javascript">
-  // var apiUrl = 'https://pokeapi.co/api/v2/pokemon/ditto/';
-  // fetch(apiUrl).then(response => {
-  //   return response.json();
-  // }).then(data => {
-  //   // Work with JSON data here
-  //   console.log(data);
-  // }).catch(err => {
-  //   // Do something for an error here
-  // });
-  // >>>>
-  var ip = ""
-  function getIP(json) {
-    ip = json.ip
-    document.write("My public IP address is: ", json.ip);
-  }
-  // 
-  fetch('https://api.logflare.app/api/logs?source=047d3a86-4c1f-4d80-a855-6f6e168232bb', {
-    Method: 'POST',
-    Headers: {
-      Accept: 'application.json',
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
-      'X-API-KEY': '-1jwfIWKKZha'
-    },
-    Body: {
-      "message": "This is my log event",
-      "metadata": {
-        "ip": ip
-      }
-    },
-    Cache: 'default'
-  }).then(response => {
-    return response.json();
-  }).then(data => {
-    // Work with JSON data here
-    console.log(data);
-  }).catch(err => {
-    // Do something for an error here
-  });
-</script>
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <!-- <symbol id="bootstrap" viewBox="0 0 118 94">
